@@ -34,6 +34,10 @@ git init
 
 ---
 
+**Nota:** Seleccionar gitbash como terminal por defecto en vscode
+
+---
+
 ## 3. Comandos de Flujo Diario
 Este es el ciclo que repetirás constantemente: **Modificar → Preparar → Guardar → Subir**.
 
@@ -50,15 +54,14 @@ Este es el ciclo que repetirás constantemente: **Modificar → Preparar → Gua
 Un commit debe ser **atómico** (hace una sola cosa bien). El mensaje debe ser claro y descriptivo.
 
 **✅ Ejemplos correctos:**
-*   `feat: add login form validation`
-*   `fix: resolve crash on mobile view`
-*   `docs: update README with installation steps`
-*   `style: change button color to primary blue`
+*   `validar formulario de login`
+*   `corregir error en vista movil`
+*   `actualizar README con instrucciones de instalacion`
+*   `cambiar color del boton a azul primario`
 
 ---
 
-## 4. "Viaje en el Tiempo" y Gestión de Errores
-Git nos permite corregir errores.
+## 4. "Viaje en el Tiempo" y Corrección de Errores
 
 ### A. Navegar entre Commits (Solo ver)
 Si quieres ver cómo estaba el código en el pasado sin borrar nada:
@@ -68,16 +71,16 @@ git checkout <ID-del-commit>
 > [!NOTE]
 > Para volver al presente, usa `git checkout main`.
 
-### B. Corregir el último Commit (Sobreescribir)
+### B. Deshacer cambios (Reset)
+*   **Soft Reset:** `git reset --soft <hash>`. Borra los commits pero **mantiene tus cambios**.
+*   **Hard Reset:** `git reset --hard <hash>`. Borra los commits y **borra tus cambios**.
+> [!CAUTION]
+> El Hard Reset borra los commits y los cambios de forma irreversible.
+
+### C. Corregir el último Commit (Sobreescribir)
 Si hiciste un commit pero olvidaste un archivo o te equivocaste en el mensaje:
 1. Añade el archivo que faltaba: `git add <archivo>`
 2. Ejecuta: `git commit --amend -m "Nuevo mensaje corregido"`
-
-### C. Deshacer cambios (Reset)
-*   **Soft Reset (Arrepentimiento ligero):** `git reset --soft HEAD~1`. Borra el commit pero **mantiene tus cambios**.
-*   **Hard Reset (Borrado total):** `git reset --hard HEAD~1`.
-> [!CAUTION]
-> El Hard Reset destruye todo el código que no hayas guardado.
 
 ---
 
