@@ -118,11 +118,6 @@ body {
     gap: 20px;
 }
 
-.task-card:hover {
-    transform: translateY(-8px);
-    border-color: var(--accent);
-    box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.5), 0 0 0 1px var(--accent-glow);
-}
 
 .task-card h3 {
     font-size: 1.25rem;
