@@ -1,4 +1,4 @@
-public class PrimitoChar {
+public class PrimitivosChar {
     public static void main(String[] args) {
         char symbol = '@';
         char code = '\u0040';

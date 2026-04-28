@@ -1,4 +1,4 @@
-public class PrimitivoBoolean {
+public class PrimitivosBoolean {
     public static void main(String[] args) {
 
         boolean booleanValue = true;
