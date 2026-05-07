@@ -150,7 +150,7 @@ public class App {
 
         int numero = 13;
 
-        if (numero % 2 == 0 && numero > 10) {
+        if (numero % 2 == 0) {
             if (numero > 10) {
                 System.out.println("Es par y mayor que 10");
             } else {
